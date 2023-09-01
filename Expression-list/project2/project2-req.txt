@@ -1,0 +1,176 @@
+Objectives:
+Solve problem, design solution and implement using C++ Class and Objects
+Learn how to manipulate C++ arrays of objects using vector class
+Use C++ stream to read in data and format output
+
+Description:
+Define a C++ class named "Expression" that manages an expression info: operand1 (integer), operand2 (integer) and the expression operator (char). It must provide at least the following method:
+- toString() to return a string containing all the expression info such as
+        10         +        20        =         30
+It must NOT store the expression result as a data member because it can be calculated when needed.
+
+Write a command-driven program named "ListExpressions" that will accept the following commands:
+add
+listall
+listbyoperator
+listsummary
+exit
+
+"add" command will read in the expression and save it away in the list
+"listall" command will display all the expressions
+"listbyoperator" command will read in the operator and display only expressions with that given operator
+"listsummary" command will display the total number of expressions, the number expressions for each operator, the largest and smallest expression values
+"exit" command will exit the program
+Requirements:
+1. The program must produce the same expected output as provided.
+2. It must be using the vector object to manage the list of Expression objects. Because the vector class can support any size, there is no need to limit the number of expressions that can be entered.
+4. There should be no global variables. Please use only local variables and parameters instead
+5. Scanf and printf are not allowed (Please use C++ cin and cout and C++ formatting)
+6. Should handle error condition when the user enters invalid operators, invalid operand and invalid command.
+7. It should display "There is no expression." when no expression is in the list.
+8. When the user enters "listbyoperator" command and there is no matched expression, it should display "No expression is found with the operator: <search-operator>" message such as "No expression is found with the operator: $"
+9. Each expression must be stored in its own Expression object
+
+Expected output:
+
+D:\>ListExpressions
+
+Welcome to expression management program.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+There is no expression.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+There is no expression.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+There is no expression.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): list
+Unsupported command. Please try again.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): quit
+Unsupported command. Please try again.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+10 + 20
+        10         +        20        =         30
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+1 * 0
+         1         *         0        =          0
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+All expressions:
+        10         +        20        =         30
+         1         *         0        =          0
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+Total number of expressions: 2
+Number of '+' expressions:   1
+Number of '-' expressions:   0
+Number of '*' expressions:   1
+Number of '/' expressions:   0
+Number of '%' expressions:   0
+Largest expression:          30
+Smallest expression:         0
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+9 * 5
+         9         *         5        =         45
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+201 - 1
+       201         -         1        =        200
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+11 % 3
+        11         %         3        =          2
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+abc + 5
+Invalid operand. Number is expected.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+5 * abc
+Invalid operand. Number is expected.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+1 % 2
+         1         %         2        =          1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+1 ? 2
+
+Unsupported expression operator.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+1 $ 2
+
+Unsupported expression operator.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+All expressions:
+        10         +        20        =         30
+         1         *         0        =          0
+         9         *         5        =         45
+       201         -         1        =        200
+        11         %         3        =          2
+         1         %         2        =          1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
+*
+         1         *         0        =          0
+         9         *         5        =         45
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
+-
+       201         -         1        =        200
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
+%
+        11         %         3        =          2
+         1         %         2        =          1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
+?
+No expression is found with the operator: ?
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
+$
+No expression is found with the operator: $
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+Total number of expressions: 6
+Number of '+' expressions:   1
+Number of '-' expressions:   1
+Number of '*' expressions:   2
+Number of '/' expressions:   0
+Number of '%' expressions:   2
+Largest expression:          200
+Smallest expression:         0
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+-1 * 1
+        -1         *         1        =         -1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+300 * 1
+       300         *         1        =        300
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): list
+Unsupported command. Please try again.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+All expressions:
+        10         +        20        =         30
+         1         *         0        =          0
+         9         *         5        =         45
+       201         -         1        =        200
+        11         %         3        =          2
+         1         %         2        =          1
+        -1         *         1        =         -1
+       300         *         1        =        300
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+Total number of expressions: 8
+Number of '+' expressions:   1
+Number of '-' expressions:   1
+Number of '*' expressions:   4
+Number of '/' expressions:   0
+Number of '%' expressions:   2
+Largest expression:          300
+Smallest expression:         -1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): quit
+Unsupported command. Please try again.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): exit
+
+Thank you. Goodbye.

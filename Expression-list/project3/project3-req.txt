@@ -1,0 +1,229 @@
+Objectives:
+Solve problem, design solution and implement using C++ class, inherited class and objects
+Learn how to manipulate C++ list of object pointers using vector class
+Use C++ stream to read in data and format output
+Make use of inheritance and polymorphism.
+
+Description:
+Define a C++ class named "NamedExpression" that manages a named expression info: name (string), operand1 (integer), operand2 (integer) and the expression operator (char). It must provide at least the following method:
+- toString() to return a string containing all the expression info such as
+        10         +        20        =         30  NAME(exp1)
+It must NOT store the expression result as a data member because it can be calculated when needed.
+
+This class must inherit from and make full use of the Expression class defined in project #2.
+
+Write a command-driven program named "ListNamedExpressions" that will accept the following commands:
+add
+listall
+listbyoperator
+listsummary
+exit
+
+    "add" command will read in the expression and save it away in the list
+       The expression can be entered in either named or unnamed format.
+       For example, the user can enter
+       10  +  20
+       or
+       exp1  = 10  + 20
+       where "exp1" is the name of that expression.
+    "listall" command will display all the expressions
+    "listbyoperator" command will read in the operator and display only expressions with that given operator
+    "listsummary" command will display the total number of expressions, the number expressions for each operator, the largest and smallest expression values
+    "exit" command will exit the program
+
+Requirements:
+1. The program must produce the same expected output as provided.
+2. It must be using the vector object to manage the list of pointers that can either point to Expression or NamedExpression objects. Because the vector class can support any size, there is no need to limit the number of expressions that can be entered.
+4. There should be no global variables. Please use only local variables and parameters instead
+5. Scanf and printf are not allowed (Please use C++ cin and cout and C++ formatting)
+6. Should handle error condition when the user enters invalid operators, invalid operand and invalid command. In addition, the name of the expression must start with an alphabet character (upper or lower case).
+7. It should display "There is no expression." when no expression is in the list.
+8. When the user enters "listbyoperator" command and there is no matched expression, it should display "No expression is found with the operator: <search-operator>" message such as "No expression is found with the operator: $"
+9. Each expression must be stored in its own Expression or NamedExpression object
+10. There should be one list of object pointers that point to either Expression or NamedExpression objects. In another words, both Expression and NamedExpression objects should be in the same list.
+11. The user should be able to enter either named or unnamed expression. If there is an error, it should display an informational message to describe the exact error.
+12. There should be no multiple return statements in one function or method.
+
+13. The expressions must be listed in the same order that the user has entered.
+
+14. There must be at least 6 functions in the program.
+
+Expected output:
+
+Welcome to the named expression management program.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+There is no expression.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+There is no expression.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+There is no expression.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): quit
+Unsupported command. Please try again.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+10 + 20
+        10         +        20        =         30
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+3 * 40
+         3         *        40        =        120
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+exp1 = 100 - 5
+       100         -         5        =         95  NAME(exp1)
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+40 / 5
+        40         /         5        =          8
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+exp2 = 300 - 1
+       300         -         1        =        299  NAME(exp2)
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+2 - 1
+         2         -         1        =          1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+All expressions:
+        10         +        20        =         30
+         3         *        40        =        120
+       100         -         5        =         95  NAME(exp1)
+        40         /         5        =          8
+       300         -         1        =        299  NAME(exp2)
+         2         -         1        =          1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
+-
+       100         -         5        =         95  NAME(exp1)
+       300         -         1        =        299  NAME(exp2)
+         2         -         1        =          1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
++
+        10         +        20        =         30
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+exp3 = 15 + 5
+        15         +         5        =         20  NAME(exp3)
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+All expressions:
+        10         +        20        =         30
+         3         *        40        =        120
+       100         -         5        =         95  NAME(exp1)
+        40         /         5        =          8
+       300         -         1        =        299  NAME(exp2)
+         2         -         1        =          1
+        15         +         5        =         20  NAME(exp3)
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listbyoperator
+Please enter the operator:
++
+        10         +        20        =         30
+        15         +         5        =         20  NAME(exp3)
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+Total number of expressions: 7
+Number of '+' expressions:   2
+Number of '-' expressions:   3
+Number of '*' expressions:   1
+Number of '/' expressions:   1
+Number of '%' expressions:   0
+Largest expression:          299
+Smallest expression:         1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+50 * 5
+        50         *         5        =        250
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+All expressions:
+        10         +        20        =         30
+         3         *        40        =        120
+       100         -         5        =         95  NAME(exp1)
+        40         /         5        =          8
+       300         -         1        =        299  NAME(exp2)
+         2         -         1        =          1
+        15         +         5        =         20  NAME(exp3)
+        50         *         5        =        250
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+Total number of expressions: 8
+Number of '+' expressions:   2
+Number of '-' expressions:   3
+Number of '*' expressions:   2
+Number of '/' expressions:   1
+Number of '%' expressions:   0
+Largest expression:          299
+Smallest expression:         1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+exp4 = 500 + 1
+       500         +         1        =        501  NAME(exp4)
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+Total number of expressions: 9
+Number of '+' expressions:   3
+Number of '-' expressions:   3
+Number of '*' expressions:   2
+Number of '/' expressions:   1
+Number of '%' expressions:   0
+Largest expression:          501
+Smallest expression:         1
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+10 - 20
+        10         -        20        =        -10
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listall
+All expressions:
+        10         +        20        =         30
+         3         *        40        =        120
+       100         -         5        =         95  NAME(exp1)
+        40         /         5        =          8
+       300         -         1        =        299  NAME(exp2)
+         2         -         1        =          1
+        15         +         5        =         20  NAME(exp3)
+        50         *         5        =        250
+       500         +         1        =        501  NAME(exp4)
+        10         -        20        =        -10
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): listsummary
+Total number of expressions: 10
+Number of '+' expressions:   3
+Number of '-' expressions:   4
+Number of '*' expressions:   2
+Number of '/' expressions:   1
+Number of '%' expressions:   0
+Largest expression:          501
+Smallest expression:         -10
+
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+abc + 1
+Invalid operand. Number is expected.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+1 + abc
+Invalid operand. Number is expected.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+exp10 = abc + 1
+Invalid operand. Number is expected.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+exp10 = 1 + abc
+Invalid operand. Number is expected.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+10exp = 10 + 20
+Invalid expression name. Name must start out with an alphabet character.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+1exp = 1 + 2
+Invalid expression name. Name must start out with an alphabet character.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+1  ? 2
+Unsupported expression operator.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): add
+Please enter an expression:
+exp1 = 1 ? 2
+Unsupported expression operator.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): quit
+Unsupported command. Please try again.
+Please enter a command (add, listall, listbyoperator, listsummary, and exit): exit
+
+Thank you. Goodbye.
