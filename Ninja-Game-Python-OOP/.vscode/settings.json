@@ -1,0 +1,3 @@
+{
+    "python.analysis.extraPaths": ["${workspaceFolder}./My_First_game"]
+}
