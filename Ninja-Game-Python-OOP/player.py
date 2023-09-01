@@ -74,8 +74,8 @@ class Player:
         self.collision_player()
         self.movement()
     def collision_player(self):
-        print(f'one - player : {ENEMY_ONE_POS[0]-PLAYER_POS[0]}')
-        print(f'two - player : {ENEMY_TWO_POS[0]-PLAYER_POS[0]}')
+        # print(f'one - player : {ENEMY_ONE_POS[0]-PLAYER_POS[0]}')
+        # print(f'two - player : {ENEMY_TWO_POS[0]-PLAYER_POS[0]}')
         if (WALL_ONE_POS[0]-PLAYER_POS[0]+8==0 and PLAYER_POS[1]-WALL_ONE_POS[1]<-25) :
             HEALTH[0] -= 1
         if (WALL_TWO_POS[0]-PLAYER_POS[0]-8==0 and PLAYER_POS[1]-WALL_TWO_POS[1]<-25):
