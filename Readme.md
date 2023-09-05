@@ -17,7 +17,7 @@ Current projects are:
 -  Stackoverflow survey data analysis (<code><img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></code>- pandas & matplotlib)
 -  UCLA summer Hackathon competition 2023 (<code><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"></code>, <code><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"></code><code><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"></code> - CAD)
 # Let's Get Connected
-
+<a href="www.linkedin.com/in/sinaghadimi"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 
 
 
