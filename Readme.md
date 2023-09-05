@@ -16,9 +16,8 @@ Current projects are:
 -  Ninja Game (python - pygame library - OOP)
 -  Stackoverflow survey data analysis (python - pandas & matplotlib)
 -  UCLA summer Hackathon competition 2023 (Arduino, HTML/CSS - CAD)
-# Contact Me
-Connecting with fellow enthusiasts and learners is one of the joys of this journey. If you have questions, feedback, or just want to say hello, please don't hesitate to reach out to me at 
-s.ghadimi@outlook.com. Your insights and support mean the world to me!
+# Let's Get Connected
+
 
 
 
