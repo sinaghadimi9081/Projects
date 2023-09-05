@@ -11,7 +11,7 @@ I am a third year student studying Electrical Engineering at UCLA. I am very pas
 
 Within this directory, you'll find a diverse collection of projects, each with its own story to tell. These projects embody my commitment to innovation, craftsmanship, and the joy of discovery. Whether you're here to learn, collaborate, or simply indulge your curiosity, you're in the right place.
 Current projects are:
--  Expression List (C++)<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+-  Expression List (C++)<code><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"></code>
 -  Ipoduino (Arduino)
 -  Ninja Game (python - pygame library - OOP)
 -  Stackoverflow survey data analysis (python - pandas & matplotlib)
