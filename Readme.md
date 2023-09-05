@@ -13,7 +13,7 @@ Within this directory, you'll find a diverse collection of projects, each with i
 Current projects are:
 -  Expression List <code><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"></code>
 -  Ipoduino <code><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"></code>
--  Ninja Game (python - pygame library - OOP)
+-  Ninja Game (<code><img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></code> - pygame library - OOP)
 -  Stackoverflow survey data analysis (python - pandas & matplotlib)
 -  UCLA summer Hackathon competition 2023 (Arduino, HTML/CSS - CAD)
 # Let's Get Connected
