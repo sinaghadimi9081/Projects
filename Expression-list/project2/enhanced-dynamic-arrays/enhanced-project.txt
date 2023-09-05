@@ -1,3 +1,4 @@
 Update programming project #2 using array of pointers to Expression objects instead of using the vector object.
 
-Please predefine the size of the array to start at 10. Every time, the array is full, please allocate a new array with 10 more, copy the original array to the new one and free the original one.
+Please predefine the size of the array to start at 10. Every time, the array is full, please allocate a new array with 10 more, 
+copy the original array to the new one and free the original one.
