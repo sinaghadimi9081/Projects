@@ -16,18 +16,10 @@ Current projects are:
 -  Ninja Game (python - pygame library - OOP)
 -  Stackoverflow survey data analysis (python - pandas & matplotlib)
 -  UCLA summer Hackathon competition 2023 (Arduino, HTML/CSS - CAD)
-
-# Navigating the Projects
-To dive into any project that catches your eye, simply browse through the directories in this repository. Every project comes with its own README file, providing detailed information about its purpose, features, and how to get started. Feel free to explore, experiment, and make these projects your own.
-
 # Contact Me
 Connecting with fellow enthusiasts and learners is one of the joys of this journey. If you have questions, feedback, or just want to say hello, please don't hesitate to reach out to me at 
 s.ghadimi@outlook.com. Your insights and support mean the world to me!
-# End
-Thank you for taking the time to explore the Projects Directory. These projects represent not just my work but a piece of my heart. I hope they inspire you and bring a little bit of magic to your own projects and aspirations. Happy exploring!
 
-Warm regards,
-Sina
 
 
 
