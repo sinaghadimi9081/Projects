@@ -33,7 +33,8 @@ exit
 
 Requirements:
 1. The program must produce the same expected output as provided.
-2. It must be using the vector object to manage the list of pointers that can either point to Expression or NamedExpression objects. Because the vector class can support any size, there is no need to limit the number of expressions that can be entered.
+2. It must be using the vector object to manage the list of pointers that can either point to Expression or NamedExpression objects. 
+Because the vector class can support any size, there is no need to limit the number of expressions that can be entered.
 4. There should be no global variables. Please use only local variables and parameters instead
 5. Scanf and printf are not allowed (Please use C++ cin and cout and C++ formatting)
 6. Should handle error condition when the user enters invalid operators, invalid operand and invalid command. In addition, the name of the expression must start with an alphabet character (upper or lower case).
